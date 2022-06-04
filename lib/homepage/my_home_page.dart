@@ -16,8 +16,8 @@ class _MyHomePageState extends State<MyHomePage> {
   void _changeColor() {
     const byteMaxValue = 255;
     final rgb = () {
-      final rnd = Random();
       const lessThan = 256;
+      final rnd = Random();
 
       return [
         rnd.nextInt(lessThan),
