@@ -41,14 +41,15 @@ class _MyHomePageState extends State<MyHomePage> {
     const fontSize = 42.0;
     const shadow = [Shadow(offset: Offset(1.0, 1.0), color: Colors.black)];
     const text = 'Hey there';
+    final size =  MediaQuery.of(context).size;
 
     return Scaffold(
       body: GestureDetector(
         onTap: () => _changeColor(),
         child: AnimatedContainer(
           color: _color,
-          height: MediaQuery.of(context).size.height,
-          width: MediaQuery.of(context).size.width,
+          height: size.height,
+          width: size.width,
           duration: duration,
           child: Center(
             child: AnimatedDefaultTextStyle(
